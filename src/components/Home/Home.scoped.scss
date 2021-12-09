@@ -1,0 +1,11 @@
+@import '../../styles//globals.scss';
+
+.home-text {
+    height: 100vh;
+    color: $white-color;
+    font-size: $l-font;
+    button {
+        @include button;
+        width: 15rem;
+    }
+}

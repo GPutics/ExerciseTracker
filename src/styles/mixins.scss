@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+@mixin  button {
+    font-family: inherit;
+    color: $white-color;
+    background-color: $blue-color;
+    padding: 10px 30px;
+    font-size: $md-font;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

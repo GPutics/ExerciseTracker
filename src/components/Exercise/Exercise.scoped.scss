@@ -1,0 +1,154 @@
+@import '../../styles/globals.scss';
+
+tr {
+    @media(max-width: 750px) {
+        border: 1px solid lightgrey;
+    }
+
+    td {
+        padding: 12px 15px;
+        text-align: center;
+    
+        @media(max-width: 750px) {
+            display: block;
+            width: 100%;
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+
+            &::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-size: 20px;
+                font-weight: 900;
+                text-align: left;
+            }
+        }
+    }
+    
+    @media(max-width: 750px) {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.exercise-container {
+    transition: opacity 0.3s ease-in;
+    
+    &.complete {
+        opacity: 0.3;
+    }
+
+    .icon {
+        font-size: 20px;
+        font-size: $l-font;
+        vertical-align: -20%;
+        cursor: pointer;
+        &.dropdown-icon,
+        &.tick-icon,
+        &.minus-icon {
+            margin-right: 10px;
+        }
+        &.plus-icon {
+            margin-left: 10px;
+        }
+
+        @media(max-width: 750px) {
+            font-size: 25px;
+        }
+    }
+
+    .name {
+        font-size: $md-font;
+
+        @media(max-width: 750px) {
+            font-size: 20px;
+        }
+    }
+
+    .rest {
+        justify-content: center;
+
+        @media(max-width: 750px) {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.fold {
+    display: none;
+
+    td {
+        @media(max-width: 750px) {
+            padding-left: 10px;
+        }
+    }
+
+    &.open {
+        display: table-row;
+
+        @media(max-width: 750px) {
+            display: block;
+        }
+    }
+
+    .fold-content {
+        padding-bottom: 2rem;
+
+        .text {
+            // width: 50%;
+
+            .how-to-do {
+                text-align: left;
+
+                .desc {
+                    padding: 1rem 0;
+                    font-size: 0.85rem;
+                    width: 700px;
+                    overflow-wrap: break-word;
+
+                    @media(max-width: 750px) {
+                        width: 200px;
+                    }
+                }
+
+                .desc-title {
+                    font-weight: 900;
+                }
+
+                .buttons {
+                    .editBtn,
+                    .deleteBtn {
+                        @include button;
+                        font-size: 0.85rem;
+
+                    }
+
+                    .editBtn {
+                        background-color: $blue-color;
+                        margin-right: 1rem;
+                    }
+                    .deleteBtn {
+                        background-color: $red-color;
+                    }
+                }
+            }
+
+            .muscles-worked {
+                text-align: left;
+                .muscles {
+                    padding: 1rem 0;
+                    font-size: 0.85rem;
+                }
+
+                .muscles-title {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

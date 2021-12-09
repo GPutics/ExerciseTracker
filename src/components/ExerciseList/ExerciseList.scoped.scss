@@ -1,0 +1,39 @@
+@import '../../styles/globals.scss';
+
+main {
+    // margin-top: 5rem;
+    color: $white-color;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    @media(max-width: 750px) {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        th {
+            font-size: $l-font;
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        @media(max-width: 750px) {
+            display: none;
+        }
+    }
+
+    tbody {
+        @media(max-width: 750px) {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,146 @@
+@import '../styles/variables.scss';
+
+//Margin
+.m {
+    &-sm {
+        margin: 0.5rem;
+    }
+
+    &-md {
+        margin: 1rem;
+    }
+    
+    &-l {
+        margin: 1.5rem;
+    }
+
+    &-xl {
+        margin: 2rem;
+    }
+
+    &-xxl {
+        margin: 3rem;
+    }
+}
+
+//Marin top
+.mt {
+    &-sm {
+        margin-top: 0.5rem;
+    }
+
+    &-md {
+        margin-top: 1rem;
+    }
+    
+    &-l {
+        margin-top: 1.5rem;
+    }
+
+    &-xl {
+        margin-top: 2rem;
+    }
+
+    &-xxl {
+        margin-top: 3rem;
+    }
+}
+
+//Marin bot
+.mb {
+    &-sm {
+        margin-bottom: 0.5rem;
+    }
+
+    &-md {
+        margin-bottom: 1rem;
+    }
+    
+    &-l {
+        margin-bottom: 1.5rem;
+    }
+
+    &-xl {
+        margin-bottom: 2rem;
+    }
+
+    &-xxl {
+        margin-bottom: 3rem;
+    }
+}
+
+//Marin left
+.ml {
+    &-sm {
+        margin-left: 0.5rem;
+    }
+
+    &-md {
+        margin-left: 1rem;
+    }
+    
+    &-l {
+        margin-left: 1.5rem;
+    }
+
+    &-xl {
+        margin-left: 2rem;
+    }
+
+    &-xxl {
+        margin-left: 3rem;
+    }
+}
+
+//Marin top
+.mr {
+    &-sm {
+        margin-right: 0.5rem;
+    }
+
+    &-md {
+        margin-right: 1rem;
+    }
+    
+    &-l {
+        margin-right: 1.5rem;
+    }
+
+    &-xl {
+        margin-right: 2rem;
+    }
+
+    &-xxl {
+        margin-right: 3rem;
+    }
+}
+
+//Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-sa {
+        justify-content: space-around;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+    //flex directions
+    &-row {
+        flex-direction: row;
+    }
+
+    &-col {
+        flex-direction: column;
+    }
+}

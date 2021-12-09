@@ -1,0 +1,21 @@
+@import './variables.scss';
+@import './utils.scss';
+@import './mixins.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+a {
+    text-decoration: none;
+}

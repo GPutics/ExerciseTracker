@@ -1,0 +1,14 @@
+@import '../../styles/globals.scss';
+
+nav {
+    width: 100vw;
+    height: 5rem;
+    a {
+        color: white;
+        font-size: $md-font;
+    }
+    .active {
+        border-bottom: 2px solid orange;
+        padding-bottom: 4px;
+    }
+}
